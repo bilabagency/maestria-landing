@@ -9,8 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          primary: "#0EA5E9",
+          "primary-hover": "#0284C7",
+          dark: "#1E293B",
+          muted: "#64748B",
+          violet: "#C4B5FD",
+          "violet-deep": "#A78BFA",
+          mint: "#A7F3D0",
+          "mint-deep": "#6EE7B7",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
       },
     },
   },
