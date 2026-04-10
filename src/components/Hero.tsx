@@ -79,10 +79,10 @@ export default function Hero({ variant }: { variant: HeroVariant }) {
             </div>
           </motion.div>
 
-          {/* Visual — takes 2/5 on desktop */}
+          {/* Image — takes 2/5 on desktop */}
           <motion.div
             className="hidden lg:flex lg:col-span-2 items-center justify-center"
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.7,
@@ -90,31 +90,42 @@ export default function Hero({ variant }: { variant: HeroVariant }) {
               ease: [0.16, 1, 0.3, 1],
             }}
           >
-            <div className="relative w-full aspect-square max-w-[400px]">
-              <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-brand-violet/30 via-brand-mint/20 to-brand-primary/10 backdrop-blur-sm border border-white/40 shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)]" />
-              <div className="absolute inset-6 rounded-[2rem] bg-white/60 backdrop-blur-md border border-white/50 flex flex-col items-center justify-center p-8 gap-4">
-                <GraduationCap
-                  size={64}
-                  weight="duotone"
-                  className="text-brand-primary"
+            <div className="relative w-full max-w-[420px]">
+              {/* Decorative frame behind image */}
+              <div className="absolute -inset-3 rounded-[2.5rem] bg-gradient-to-br from-brand-violet/25 via-brand-mint/15 to-brand-primary/10 blur-sm" />
+
+              {/* Main image container */}
+              <div className="relative rounded-[2rem] overflow-hidden shadow-[0_25px_50px_-12px_rgba(0,0,0,0.12)] border border-white/60">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={variant.image}
+                  alt={variant.imageAlt}
+                  className="w-full aspect-[3/4] object-cover"
+                  loading="eager"
                 />
-                <p className="text-center text-sm font-semibold text-brand-dark leading-snug">
-                  Maestria en Gestion
-                  <br />y Asesoramiento Pedagogico
-                </p>
-                <span className="text-xs text-brand-muted font-medium tracking-wide uppercase">
-                  Universidad Nacional de Rosario
-                </span>
-                <div className="flex gap-2 mt-2">
-                  <span className="rounded-full bg-brand-primary/10 px-3 py-1 text-xs font-medium text-brand-primary">
-                    720 hs
+
+                {/* Subtle gradient overlay at bottom for text contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent" />
+
+                {/* Floating info card over image */}
+                <div className="absolute bottom-5 left-5 right-5 rounded-xl bg-white/90 backdrop-blur-md border border-white/50 shadow-[inset_0_1px_0_rgba(255,255,255,0.4)] p-4">
+                  <p className="text-sm font-semibold text-brand-dark leading-snug">
+                    Maestria en Gestion y Asesoramiento Pedagogico
+                  </p>
+                  <span className="text-xs text-brand-muted font-medium mt-1 block">
+                    Universidad Nacional de Rosario
                   </span>
-                  <span className="rounded-full bg-brand-violet/20 px-3 py-1 text-xs font-medium text-brand-violet-deep">
-                    2 anios
-                  </span>
-                  <span className="rounded-full bg-brand-mint/30 px-3 py-1 text-xs font-medium text-emerald-700">
-                    16 seminarios
-                  </span>
+                  <div className="flex gap-2 mt-3">
+                    <span className="rounded-full bg-brand-primary/10 px-2.5 py-0.5 text-xs font-medium text-brand-primary">
+                      720 hs
+                    </span>
+                    <span className="rounded-full bg-brand-violet/20 px-2.5 py-0.5 text-xs font-medium text-brand-violet-deep">
+                      2 anios
+                    </span>
+                    <span className="rounded-full bg-brand-mint/30 px-2.5 py-0.5 text-xs font-medium text-emerald-700">
+                      16 seminarios
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
