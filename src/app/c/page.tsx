@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Competi con respaldo — Maestria en Gestion Pedagogica UNR | Fundacion Jerarquicos Educa",
+    "Competí con respaldo — Maestría en Gestión Pedagógica UNR | Fundación Jerárquicos Educa",
   description:
-    "Lidera con fundamentos. Maestria en Gestion y Asesoramiento Pedagogico de la UNR, presencial en Santa Fe. CONEAU. 720 horas. Decreto 3029.",
+    "Liderá con fundamentos. Maestría en Gestión y Asesoramiento Pedagógico de la UNR, presencial en Santa Fe. CONEAU. 720 horas. Decreto 3029.",
 };
 
 export default function VariantC() {

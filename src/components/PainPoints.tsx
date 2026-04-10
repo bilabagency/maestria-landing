@@ -6,21 +6,21 @@ import { Trophy, Compass, MapTrifold } from "@phosphor-icons/react";
 const pains = [
   {
     icon: Trophy,
-    pain: "Perdes concursos por falta de puntaje",
+    pain: "Perdés concursos por falta de puntaje",
     solution:
-      "La maestria otorga maximo puntaje docente segun Decreto 3029 con 720 hs acreditadas.",
+      "La maestría otorga máximo puntaje docente según Decreto 3029 con 720 hs acreditadas.",
   },
   {
     icon: Compass,
-    pain: "Gestionas por intuicion, no por formacion",
+    pain: "Gestionás por intuición, no por formación",
     solution:
-      "Formacion interdisciplinaria en liderazgo, legislacion, planificacion estrategica y mediacion.",
+      "Formación interdisciplinaria en liderazgo, legislación, planificación estratégica y mediación.",
   },
   {
     icon: MapTrifold,
-    pain: "No podes viajar a Rosario para estudiar",
+    pain: "No podés viajar a Rosario para estudiar",
     solution:
-      "Titulo de la UNR dictado en Santa Fe Capital. Incluye curso de ingles para la titulacion.",
+      "Título de la UNR dictado en Santa Fe Capital. Incluye curso de inglés para la titulación.",
   },
 ];
 
@@ -38,11 +38,11 @@ export default function PainPoints() {
           className="mb-14"
         >
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark mb-4">
-            Te sentis identificado/a?
+            ¿Te sentís identificado/a?
           </h2>
           <p className="text-brand-muted text-lg max-w-[55ch]">
-            Si alguna de estas situaciones te resulta familiar, esta maestria fue
-            disenada para vos.
+            Si alguna de estas situaciones te resulta familiar, esta maestría fue
+            diseñada para vos.
           </p>
         </motion.div>
 

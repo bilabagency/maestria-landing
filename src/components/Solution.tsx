@@ -20,22 +20,22 @@ export default function Solution() {
             transition={{ duration: 0.5 }}
           >
             <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
-              La solucion
+              La solución
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark mb-6">
-              Maestria en Gestion y Asesoramiento Pedagogico de las
+              Maestría en Gestión y Asesoramiento Pedagógico de las
               Organizaciones Educativas
             </h2>
             <div className="space-y-4 text-brand-muted leading-relaxed max-w-[65ch]">
               <p>
-                Un programa de posgrado con enfoque profesional, no solo teorico.
-                Cada seminario esta disenado para que apliques lo aprendido
-                directamente en tu institucion educativa.
+                Un programa de posgrado con enfoque profesional, no solo teórico.
+                Cada seminario está diseñado para que apliques lo aprendido
+                directamente en tu institución educativa.
               </p>
               <p>
-                El trabajo final es un Proyecto de Intervencion: una propuesta
-                real de mejora que diseinas e implementas en tu propia
-                organizacion durante la cursada.
+                El trabajo final es un Proyecto de Intervención: una propuesta
+                real de mejora que diseñás e implementás en tu propia
+                organización durante la cursada.
               </p>
             </div>
           </motion.div>
@@ -50,10 +50,10 @@ export default function Solution() {
             <div className="rounded-2xl bg-white border border-slate-100 p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]">
               <dl className="space-y-5">
                 {[
-                  ["Titulo oficial", "Magister (UNR)"],
+                  ["Título oficial", "Magíster (UNR)"],
                   ["Modalidad", "Presencial en Santa Fe Capital"],
-                  ["Sede", "Fundacion Jerarquicos Educa"],
-                  ["Duracion", "2 anios — 16 seminarios — 720 hs"],
+                  ["Sede", "Fundación Jerárquicos Educa"],
+                  ["Duración", "2 años — 16 seminarios — 720 hs"],
                   ["Inicio", "15 de mayo"],
                   ["Reconocimiento", "CONEAU + Decreto 3029"],
                 ].map(([label, value]) => (
@@ -71,7 +71,7 @@ export default function Solution() {
                 onClick={open}
                 className="mt-8 w-full rounded-xl bg-brand-primary px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
               >
-                Descargar programa academico
+                Descargar programa académico
               </button>
             </div>
           </motion.div>

@@ -26,7 +26,7 @@ export default function Navbar() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://fundacionjerarquicos.org.ar/wp-content/uploads/2024/11/logo-jerarquicos-educa_menu.svg"
-            alt="Fundacion Jerarquicos Educa"
+            alt="Fundación Jerárquicos Educa"
             className="h-10 w-auto"
           />
           <button

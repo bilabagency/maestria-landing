@@ -14,10 +14,10 @@ export default function VideoSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark mb-4">
-            Conoce la maestria
+            Conocé la maestría
           </h2>
           <p className="text-brand-muted text-lg max-w-[50ch] mx-auto">
-            Descubri de primera mano lo que hace unica a esta propuesta academica.
+            Descubrí de primera mano lo que hace única a esta propuesta académica.
           </p>
         </motion.div>
 

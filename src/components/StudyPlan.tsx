@@ -6,34 +6,34 @@ import { CaretDown } from "@phosphor-icons/react";
 
 const axes = [
   {
-    title: "Gestion y Administracion de Organizaciones",
+    title: "Gestión y Administración de Organizaciones",
     description:
-      "Herramientas de liderazgo, planificacion estrategica y administracion de instituciones educativas. Presupuesto, normativa y toma de decisiones.",
+      "Herramientas de liderazgo, planificación estratégica y administración de instituciones educativas. Presupuesto, normativa y toma de decisiones.",
   },
   {
-    title: "Asesoramiento y Analisis Institucional",
+    title: "Asesoramiento y Análisis Institucional",
     description:
-      "Diagnostico organizacional, mediacion de conflictos, construccion de equipos de trabajo y acompaniamiento a directivos.",
+      "Diagnóstico organizacional, mediación de conflictos, construcción de equipos de trabajo y acompañamiento a directivos.",
   },
   {
-    title: "Politicas y Sistemas Educativos",
+    title: "Políticas y Sistemas Educativos",
     description:
-      "Marco normativo nacional y provincial, politicas publicas en educacion, evaluacion institucional y regulacion del sistema.",
+      "Marco normativo nacional y provincial, políticas públicas en educación, evaluación institucional y regulación del sistema.",
   },
   {
-    title: "Practicas Profesionales y Proyectos",
+    title: "Prácticas Profesionales y Proyectos",
     description:
-      "Trabajo de campo en instituciones reales. Diseno e implementacion del Proyecto de Intervencion como trabajo final.",
+      "Trabajo de campo en instituciones reales. Diseño e implementación del Proyecto de Intervención como trabajo final.",
   },
   {
-    title: "Formacion Teorico-Metodologica",
+    title: "Formación Teórico-Metodológica",
     description:
-      "Metodologia de la investigacion educativa, epistemologia, estadistica aplicada y produccion academica.",
+      "Metodología de la investigación educativa, epistemología, estadística aplicada y producción académica.",
   },
   {
-    title: "Innovacion y Tematicas Electivas",
+    title: "Innovación y Temáticas Electivas",
     description:
-      "Seminarios optativos sobre tendencias actuales: tecnologia educativa, inclusion, ESI, educacion ambiental.",
+      "Seminarios optativos sobre tendencias actuales: tecnología educativa, inclusión, ESI, educación ambiental.",
   },
 ];
 
@@ -107,11 +107,11 @@ export default function StudyPlan() {
               Plan de estudios
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark mb-4">
-              6 ejes de formacion
+              6 ejes de formación
             </h2>
             <p className="text-brand-muted leading-relaxed max-w-[45ch]">
-              16 seminarios organizados en ejes que combinan teoria, practica y
-              aplicacion directa en tu contexto profesional.
+              16 seminarios organizados en ejes que combinan teoría, práctica y
+              aplicación directa en tu contexto profesional.
             </p>
           </motion.div>
 

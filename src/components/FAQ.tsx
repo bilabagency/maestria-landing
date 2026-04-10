@@ -6,29 +6,29 @@ import { CaretDown } from "@phosphor-icons/react";
 
 const faqs = [
   {
-    question: "Cual es la frecuencia de clases y donde se dictan?",
+    question: "¿Cuál es la frecuencia de clases y dónde se dictan?",
     answer:
-      "Las clases se dictan en modalidad presencial intensiva, generalmente en formato quincenal o mensual (segun el seminario), en la sede de Fundacion Jerarquicos Educa en Santa Fe Capital. Los encuentros se concentran en viernes y sabados para facilitar la asistencia de profesionales en actividad.",
+      "Las clases se dictan en modalidad presencial intensiva, generalmente en formato quincenal o mensual (según el seminario), en la sede de Fundación Jerárquicos Educa en Santa Fe Capital. Los encuentros se concentran en viernes y sábados para facilitar la asistencia de profesionales en actividad.",
   },
   {
-    question: "Es 100% presencial o hay instancias virtuales?",
+    question: "¿Es 100% presencial o hay instancias virtuales?",
     answer:
-      "El programa es de modalidad presencial, lo que garantiza la interaccion directa con docentes y colegas. Algunas actividades complementarias o de seguimiento pueden realizarse de forma virtual, pero el nucleo formativo es presencial.",
+      "El programa es de modalidad presencial, lo que garantiza la interacción directa con docentes y colegas. Algunas actividades complementarias o de seguimiento pueden realizarse de forma virtual, pero el núcleo formativo es presencial.",
   },
   {
-    question: "Que pasa si mi titulo es de menos de 4 anios?",
+    question: "¿Qué pasa si mi título es de menos de 4 años?",
     answer:
-      "Si tu titulo de grado tiene menos de 4 anios de duracion, podrias acceder con un postitulo o cursando una nivelacion. Te recomendamos completar el formulario de consulta para que evaluemos tu caso particular.",
+      "Si tu título de grado tiene menos de 4 años de duración, podrías acceder con un postítulo o cursando una nivelación. Te recomendamos completar el formulario de consulta para que evaluemos tu caso particular.",
   },
   {
-    question: "Como es el examen de idioma y cuando se rinde?",
+    question: "¿Cómo es el examen de idioma y cuándo se rinde?",
     answer:
-      "El requisito de idioma extranjero se cumple a traves de un examen de comprension lectora en ingles. La maestria incluye un curso de preparacion sin costo adicional. El examen se rinde antes de la defensa del trabajo final.",
+      "El requisito de idioma extranjero se cumple a través de un examen de comprensión lectora en inglés. La maestría incluye un curso de preparación sin costo adicional. El examen se rinde antes de la defensa del trabajo final.",
   },
   {
-    question: "Cual es el valor de la matricula y cuantas cuotas son?",
+    question: "¿Cuál es el valor de la matrícula y cuántas cuotas son?",
     answer:
-      "La matricula es de $45.000 (pago unico). Luego se abona en 24 cuotas mensuales: $110.000 para no socios o $99.000 para socios de Mutual Jerarquicos. Ademas, por cada colega que referis y cursa regularmente, obtenes un 25% de beca.",
+      "La matrícula es de $45.000 (pago único). Luego se abona en 24 cuotas mensuales: $110.000 para no socios o $99.000 para socios de Mutual Jerárquicos. Además, por cada colega que referís y cursa regularmente, obtenés un 25% de beca.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function FAQ() {
               Dudas comunes
             </h2>
             <p className="text-brand-muted leading-relaxed max-w-[40ch]">
-              Si tu pregunta no esta aca, completa el formulario y te respondemos
+              Si tu pregunta no está acá, completá el formulario y te respondemos
               a la brevedad.
             </p>
           </motion.div>

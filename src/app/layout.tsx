@@ -16,14 +16,14 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title:
-    "Maestria en Gestion y Asesoramiento Pedagogico — UNR | Fundacion Jerarquicos Educa",
+    "Maestría en Gestión y Asesoramiento Pedagógico — UNR | Fundación Jerárquicos Educa",
   description:
-    "Maestria en Gestion y Asesoramiento Pedagogico de las Organizaciones Educativas. Dictada por la UNR, presencial en Santa Fe. 16 seminarios, 720 horas, puntaje docente.",
+    "Maestría en Gestión y Asesoramiento Pedagógico de las Organizaciones Educativas. Dictada por la UNR, presencial en Santa Fe. 16 seminarios, 720 horas, puntaje docente.",
   openGraph: {
     title:
-      "Maestria en Gestion y Asesoramiento Pedagogico — UNR",
+      "Maestría en Gestión y Asesoramiento Pedagógico — UNR",
     description:
-      "Titulo oficial de la UNR dictado en Santa Fe Capital. Reconocida por CONEAU. Inicio mayo 2025.",
+      "Título oficial de la UNR dictado en Santa Fe Capital. Reconocida por CONEAU. Inicio mayo 2025.",
     type: "website",
   },
 };

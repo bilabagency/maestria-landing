@@ -13,25 +13,25 @@ const items = [
     icon: Buildings,
     title: "UNR en Santa Fe",
     description:
-      "El prestigio de una universidad publica nacional con la comodidad de cursar en tu ciudad.",
+      "El prestigio de una universidad pública nacional con la comodidad de cursar en tu ciudad.",
   },
   {
     icon: Briefcase,
-    title: "Maestria profesional",
+    title: "Maestría profesional",
     description:
-      "Tu trabajo final es un proyecto real de mejora que aplicas en tu propia escuela o institucion.",
+      "Tu trabajo final es un proyecto real de mejora que aplicás en tu propia escuela o institución.",
   },
   {
     icon: UsersThree,
     title: "Becas 25% por referidos",
     description:
-      "Por cada colega que referis y cursa regularmente, obtienes un 25% de descuento en tu cuota.",
+      "Por cada colega que referís y cursa regularmente, obtenés un 25% de descuento en tu cuota.",
   },
   {
     icon: Translate,
-    title: "Curso de ingles incluido",
+    title: "Curso de inglés incluido",
     description:
-      "Preparacion para el requisito de idioma integrada al programa, sin costos adicionales.",
+      "Preparación para el requisito de idioma integrada al programa, sin costos adicionales.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Differentials() {
           className="mb-14"
         >
           <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
-            Por que esta maestria
+            Por qué esta maestría
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark">
             Lo que nos diferencia

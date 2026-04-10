@@ -11,12 +11,12 @@ export default function Footer() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://fundacionjerarquicos.org.ar/wp-content/uploads/2024/11/logo-jerarquicos-educa_menu.svg"
-              alt="Fundacion Jerarquicos Educa"
+              alt="Fundación Jerárquicos Educa"
               className="h-10 w-auto mb-4"
             />
             <p className="text-brand-muted text-sm max-w-[40ch] leading-relaxed">
-              Fundacion Jerarquicos Educa — Formacion de posgrado para
-              profesionales de la educacion en Santa Fe.
+              Fundación Jerárquicos Educa — Formación de posgrado para
+              profesionales de la educación en Santa Fe.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-slate-200/60">
           <p className="text-center text-xs text-brand-muted">
-            Fundacion Jerarquicos Educa. Todos los derechos reservados.
+            Fundación Jerárquicos Educa. Todos los derechos reservados.
           </p>
         </div>
       </div>

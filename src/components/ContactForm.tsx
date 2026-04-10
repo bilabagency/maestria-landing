@@ -22,10 +22,10 @@ export default function ContactForm() {
               Contacto
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark mb-4">
-              Da el primer paso. Solicita informacion.
+              Dá el primer paso. Solicitá información.
             </h2>
             <p className="text-brand-muted leading-relaxed max-w-[40ch]">
-              Completa el formulario y recibiras el programa academico completo
+              Completá el formulario y vas a recibir el programa académico completo
               en tu email.
             </p>
             <div className="mt-8 space-y-4">
@@ -63,7 +63,7 @@ export default function ContactForm() {
                     />
                   </svg>
                 </div>
-                Tus datos estan protegidos
+                Tus datos están protegidos
               </div>
             </div>
           </motion.div>

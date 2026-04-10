@@ -56,7 +56,7 @@ export default function Hero({ variant }: { variant: HeroVariant }) {
                 onClick={open}
                 className="rounded-xl bg-brand-primary px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98] active:-translate-y-[1px]"
               >
-                Descargar programa academico
+                Descargar programa académico
               </button>
               <a
                 href="#formulario"
@@ -110,7 +110,7 @@ export default function Hero({ variant }: { variant: HeroVariant }) {
                 {/* Floating info card over image */}
                 <div className="absolute bottom-5 left-5 right-5 rounded-xl bg-white/90 backdrop-blur-md border border-white/50 shadow-[inset_0_1px_0_rgba(255,255,255,0.4)] p-4">
                   <p className="text-sm font-semibold text-brand-dark leading-snug">
-                    Maestria en Gestion y Asesoramiento Pedagogico
+                    Maestría en Gestión y Asesoramiento Pedagógico
                   </p>
                   <span className="text-xs text-brand-muted font-medium mt-1 block">
                     Universidad Nacional de Rosario
@@ -120,7 +120,7 @@ export default function Hero({ variant }: { variant: HeroVariant }) {
                       720 hs
                     </span>
                     <span className="rounded-full bg-brand-violet/20 px-2.5 py-0.5 text-xs font-medium text-brand-violet-deep">
-                      2 anios
+                      2 años
                     </span>
                     <span className="rounded-full bg-brand-mint/30 px-2.5 py-0.5 text-xs font-medium text-emerald-700">
                       16 seminarios

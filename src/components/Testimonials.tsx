@@ -5,14 +5,14 @@ import { Quotes, User } from "@phosphor-icons/react";
 
 const testimonials = [
   {
-    quote: "Proximamente",
+    quote: "Próximamente",
     name: "Nombre del egresado/a",
-    role: "Cargo / Institucion",
+    role: "Cargo / Institución",
   },
   {
-    quote: "Proximamente",
+    quote: "Próximamente",
     name: "Nombre del egresado/a",
-    role: "Cargo / Institucion",
+    role: "Cargo / Institución",
   },
 ];
 

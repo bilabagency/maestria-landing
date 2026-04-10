@@ -6,18 +6,18 @@ import { User } from "@phosphor-icons/react";
 const faculty = [
   {
     name: "Dr. Gerardo Kahan",
-    role: "Director de la Maestria",
-    bio: "Doctor UNR, Categoria II en el Programa de Incentivos. Especialista en gestion educativa y politicas institucionales.",
+    role: "Director de la Maestría",
+    bio: "Doctor UNR, Categoría II en el Programa de Incentivos. Especialista en gestión educativa y políticas institucionales.",
   },
   {
     name: "Dr. Adolfo Stubrin",
-    role: "Politicas educativas y gestion universitaria",
-    bio: "Referente nacional en politicas de educacion superior, evaluacion institucional y sistemas universitarios.",
+    role: "Políticas educativas y gestión universitaria",
+    bio: "Referente nacional en políticas de educación superior, evaluación institucional y sistemas universitarios.",
   },
   {
     name: "Dra. Carolina Tramallino",
-    role: "Lectura y escritura en educacion superior",
-    bio: "Investigadora en practicas de lectura y escritura academica, formacion docente y didactica universitaria.",
+    role: "Lectura y escritura en educación superior",
+    bio: "Investigadora en prácticas de lectura y escritura académica, formación docente y didáctica universitaria.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function Faculty() {
           className="mb-14"
         >
           <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
-            Equipo academico
+            Equipo académico
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark">
             Docentes destacados

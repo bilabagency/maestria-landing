@@ -6,21 +6,21 @@ import { ChalkboardTeacher, UserCircleGear } from "@phosphor-icons/react";
 const profiles = [
   {
     icon: ChalkboardTeacher,
-    title: "Docente en transicion",
-    age: "30-42 anios",
-    experience: "5-12 anios de experiencia",
+    title: "Docente en transición",
+    age: "30-42 años",
+    experience: "5-12 años de experiencia",
     description:
-      "Frente a aula, busca ascender a cargos de conduccion. Necesita puntaje docente y formacion en gestion para dar el salto.",
+      "Frente a aula, busca ascender a cargos de conducción. Necesita puntaje docente y formación en gestión para dar el salto.",
     color: "brand-primary",
     bg: "bg-brand-primary/10",
   },
   {
     icon: UserCircleGear,
     title: "Directivo novel",
-    age: "40-55 anios",
-    experience: "+15 anios en educacion",
+    age: "40-55 años",
+    experience: "+15 años en educación",
     description:
-      "Ya ocupa un cargo de gestion pero necesita profesionalizar su practica con herramientas y marco teorico solido.",
+      "Ya ocupa un cargo de gestión pero necesita profesionalizar su práctica con herramientas y marco teórico sólido.",
     color: "brand-violet-deep",
     bg: "bg-brand-violet/20",
   },
@@ -41,10 +41,10 @@ export default function TargetAudience() {
             Perfiles
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark mb-4">
-            A quien esta dirigida?
+            ¿A quién está dirigida?
           </h2>
           <p className="text-brand-muted text-lg max-w-[55ch]">
-            La maestria esta pensada para profesionales de la educacion que
+            La maestría está pensada para profesionales de la educación que
             quieren dar un paso adelante en su carrera.
           </p>
         </motion.div>

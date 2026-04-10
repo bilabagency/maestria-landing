@@ -55,7 +55,7 @@ export default function Modal() {
             <div className="flex items-center justify-between mb-6">
               <div>
                 <h2 className="text-xl font-bold text-brand-dark">
-                  Descargar programa academico
+                  Descargar programa académico
                 </h2>
                 <p className="text-brand-muted text-sm mt-1">
                   Completa tus datos y recibilo en tu email.

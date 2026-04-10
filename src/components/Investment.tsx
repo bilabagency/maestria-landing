@@ -20,19 +20,19 @@ export default function Investment() {
           className="mb-14"
         >
           <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
-            Inversion
+            Inversión
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-brand-dark mb-4">
-            Planifica tu inversion
+            Planificá tu inversión
           </h2>
           <p className="text-brand-muted text-lg max-w-[55ch]">
             Opciones accesibles con beneficios exclusivos para socios de Mutual
-            Jerarquicos y becas por referidos.
+            Jerárquicos y becas por referidos.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Matricula */}
+          {/* Matrícula */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -46,12 +46,12 @@ export default function Investment() {
               className="text-brand-primary mb-4"
             />
             <p className="text-sm font-semibold text-brand-muted uppercase tracking-wider mb-2">
-              Matricula
+              Matrícula
             </p>
             <p className="text-4xl font-bold text-brand-dark tracking-tighter font-mono">
               $45.000
             </p>
-            <p className="text-brand-muted text-sm mt-2">Pago unico de inscripcion</p>
+            <p className="text-brand-muted text-sm mt-2">Pago único de inscripción</p>
           </motion.div>
 
           {/* No socio */}
@@ -89,7 +89,7 @@ export default function Investment() {
               className="text-brand-primary mb-4"
             />
             <p className="text-sm font-semibold text-brand-muted uppercase tracking-wider mb-2">
-              Cuota socio Mutual Jerarquicos
+              Cuota socio Mutual Jerárquicos
             </p>
             <p className="text-4xl font-bold text-brand-dark tracking-tighter font-mono">
               $99.000
@@ -114,7 +114,7 @@ export default function Investment() {
               Beca 25% por referidos
             </p>
             <p className="text-brand-muted text-sm">
-              Por cada colega que referis y cursa regularmente, obtenes un 25% de
+              Por cada colega que referís y cursa regularmente, obtenés un 25% de
               descuento en tu cuota.
             </p>
           </div>
@@ -122,7 +122,7 @@ export default function Investment() {
             onClick={open}
             className="shrink-0 rounded-xl bg-brand-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
           >
-            Descargar programa academico
+            Descargar programa académico
           </button>
         </motion.div>
       </div>

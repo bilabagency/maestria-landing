@@ -26,17 +26,17 @@ export default function FormFields({
   const validate = useCallback(
     (form: FormData): Record<string, string> => {
       const errs: Record<string, string> = {};
-      if (!form.get("nombre")) errs.nombre = "Ingresa tu nombre completo";
-      if (!form.get("email")) errs.email = "Ingresa tu email";
+      if (!form.get("nombre")) errs.nombre = "Ingresá tu nombre completo";
+      if (!form.get("email")) errs.email = "Ingresá tu email";
       else if (
         !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.get("email") as string)
       )
-        errs.email = "Formato de email invalido";
-      if (!form.get("telefono")) errs.telefono = "Ingresa tu telefono";
-      if (!form.get("titulo")) errs.titulo = "Selecciona una opcion";
-      if (!form.get("ocupacion")) errs.ocupacion = "Selecciona una opcion";
-      if (!form.get("objetivo")) errs.objetivo = "Selecciona una opcion";
-      if (!form.get("socio")) errs.socio = "Selecciona una opcion";
+        errs.email = "Formato de email inválido";
+      if (!form.get("telefono")) errs.telefono = "Ingresá tu teléfono";
+      if (!form.get("titulo")) errs.titulo = "Seleccioná una opción";
+      if (!form.get("ocupacion")) errs.ocupacion = "Seleccioná una opción";
+      if (!form.get("objetivo")) errs.objetivo = "Seleccioná una opción";
+      if (!form.get("socio")) errs.socio = "Seleccioná una opción";
       if (parseInt(captchaInput) !== challenge.answer)
         errs.captcha = "Respuesta incorrecta";
       return errs;
@@ -81,10 +81,10 @@ export default function FormFields({
           </svg>
         </div>
         <h3 className="text-xl font-semibold text-brand-dark mb-2">
-          Listo! Te enviamos el programa a tu email.
+          ¡Listo! Te enviamos el programa a tu email.
         </h3>
         <p className="text-brand-muted">
-          Revisalo en tu bandeja de entrada. Si no lo encontras, revisa spam.
+          Revisalo en tu bandeja de entrada. Si no lo encontrás, revisá spam.
         </p>
       </div>
     );
@@ -108,7 +108,7 @@ export default function FormFields({
             name="nombre"
             required
             className={inputBase}
-            placeholder="Ej: Maria Gonzalez"
+            placeholder="Ej: María González"
           />
           {errors.nombre && <p className={errorBase}>{errors.nombre}</p>}
         </div>
@@ -131,7 +131,7 @@ export default function FormFields({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
           <label htmlFor="telefono" className={labelBase}>
-            Telefono / WhatsApp
+            Teléfono / WhatsApp
           </label>
           <input
             type="tel"
@@ -159,13 +159,13 @@ export default function FormFields({
 
       <div>
         <label htmlFor="titulo" className={labelBase}>
-          Titulo de grado
+          Título de grado
         </label>
         <select id="titulo" name="titulo" required className={inputBase}>
-          <option value="">Selecciona una opcion</option>
-          <option value="4+">4+ anios</option>
-          <option value="menos-con">Menos de 4 anios con postitulo</option>
-          <option value="menos-sin">Menos de 4 anios sin postitulo</option>
+          <option value="">Seleccioná una opción</option>
+          <option value="4+">4+ años</option>
+          <option value="menos-con">Menos de 4 años con postítulo</option>
+          <option value="menos-sin">Menos de 4 años sin postítulo</option>
         </select>
         {errors.titulo && <p className={errorBase}>{errors.titulo}</p>}
       </div>
@@ -173,7 +173,7 @@ export default function FormFields({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
           <label htmlFor="ocupacion" className={labelBase}>
-            Ocupacion actual
+            Ocupación actual
           </label>
           <select
             id="ocupacion"
@@ -181,7 +181,7 @@ export default function FormFields({
             required
             className={inputBase}
           >
-            <option value="">Selecciona una opcion</option>
+            <option value="">Seleccioná una opción</option>
             <option value="docente">Docente frente a aula</option>
             <option value="directivo">Directivo/Coordinador</option>
             <option value="educativo">Otro rol educativo</option>
@@ -199,9 +199,9 @@ export default function FormFields({
             required
             className={inputBase}
           >
-            <option value="">Selecciona una opcion</option>
+            <option value="">Seleccioná una opción</option>
             <option value="puntaje">Sumar puntaje docente</option>
-            <option value="gestion">Profesionalizar mi gestion</option>
+            <option value="gestion">Profesionalizar mi gestión</option>
             <option value="ambos">Ambos</option>
           </select>
           {errors.objetivo && <p className={errorBase}>{errors.objetivo}</p>}
@@ -209,7 +209,7 @@ export default function FormFields({
       </div>
 
       <div>
-        <span className={labelBase}>Sos socio de Mutual Jerarquicos?</span>
+        <span className={labelBase}>¿Sos socio de Mutual Jerárquicos?</span>
         <div className="flex gap-6 mt-2">
           <label className="flex items-center gap-2 cursor-pointer">
             <input
@@ -218,7 +218,7 @@ export default function FormFields({
               value="si"
               className="h-4 w-4 text-brand-primary accent-brand-primary"
             />
-            <span className="text-brand-dark">Si</span>
+            <span className="text-brand-dark">Sí</span>
           </label>
           <label className="flex items-center gap-2 cursor-pointer">
             <input
@@ -235,7 +235,7 @@ export default function FormFields({
 
       <div>
         <label htmlFor="captcha" className={labelBase}>
-          Verificacion: Cuanto es {challenge.a} + {challenge.b}?
+          Verificación: ¿Cuánto es {challenge.a} + {challenge.b}?
         </label>
         <div className="flex items-center gap-3">
           <input

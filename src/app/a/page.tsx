@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Maestria en Gestion Pedagogica — UNR en Santa Fe | Fundacion Jerarquicos Educa",
+    "Maestría en Gestión Pedagógica — UNR en Santa Fe | Fundación Jerárquicos Educa",
   description:
-    "El titulo que te separa de tu proximo ascenso en educacion. Maestria dictada por la UNR, presencial en Santa Fe. CONEAU. 720 horas. Puntaje docente Decreto 3029.",
+    "El título que te separa de tu próximo ascenso en educación. Maestría dictada por la UNR, presencial en Santa Fe. CONEAU. 720 horas. Puntaje docente Decreto 3029.",
 };
 
 export default function VariantA() {

@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Tu proximo cargo directivo empieza aca — Maestria UNR | Fundacion Jerarquicos Educa",
+    "Tu próximo cargo directivo empieza acá — Maestría UNR | Fundación Jerárquicos Educa",
   description:
-    "Maestria en Gestion y Asesoramiento Pedagogico. Dictada por la UNR en Santa Fe. CONEAU. 720 horas. Puntaje docente. Inicio mayo.",
+    "Maestría en Gestión y Asesoramiento Pedagógico. Dictada por la UNR en Santa Fe. CONEAU. 720 horas. Puntaje docente. Inicio mayo.",
 };
 
 export default function VariantB() {
