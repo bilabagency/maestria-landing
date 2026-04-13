@@ -69,7 +69,7 @@ export default function Solution() {
               </dl>
               <button
                 onClick={open}
-                className="mt-8 w-full rounded-xl bg-brand-primary px-6 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
+                className="mt-8 w-full rounded-xl bg-brand-primary px-6 py-3.5 text-sm font-semibold text-white transition-[background-color,transform] duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
               >
                 Descargar programa académico
               </button>

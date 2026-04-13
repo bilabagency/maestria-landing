@@ -263,7 +263,7 @@ export default function FormFields({
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full rounded-xl bg-brand-primary px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full rounded-xl bg-brand-primary px-8 py-4 text-base font-semibold text-white transition-[background-color,transform,opacity] duration-200 hover:bg-brand-primary-hover active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {isSubmitting ? (
           <span className="flex items-center justify-center gap-2">

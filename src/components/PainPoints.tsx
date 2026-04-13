@@ -58,7 +58,7 @@ export default function PainPoints() {
                 delay: i * 0.1,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="group rounded-2xl border border-slate-100 bg-white p-8 transition-all duration-300 hover:border-brand-primary/20 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)]"
+              className="group rounded-2xl border border-slate-100 bg-white p-8 transition-[box-shadow,border-color] duration-300 hover:border-brand-primary/20 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)]"
             >
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-primary/10 text-brand-primary transition-colors duration-200 group-hover:bg-brand-primary group-hover:text-white">
                 <item.icon size={24} weight="duotone" />

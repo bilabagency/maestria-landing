@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-[background-color,box-shadow] duration-300 ${
         scrolled
           ? "bg-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]"
           : "bg-transparent"
@@ -31,7 +31,7 @@ export default function Navbar() {
           />
           <button
             onClick={open}
-            className="rounded-lg bg-brand-primary px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
+            className="rounded-lg bg-brand-primary px-5 py-2.5 text-sm font-semibold text-white transition-[background-color,transform] duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
           >
             Descargar programa
           </button>

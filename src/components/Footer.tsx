@@ -25,7 +25,7 @@ export default function Footer() {
               href="https://wa.me/543425551234"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-emerald-700 active:scale-[0.98]"
+              className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition-[background-color,transform] duration-200 hover:bg-emerald-700 active:scale-[0.98]"
             >
               <WhatsappLogo size={20} weight="fill" />
               Escribinos por WhatsApp

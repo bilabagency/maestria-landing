@@ -68,7 +68,7 @@ export default function Differentials() {
                 delay: i * 0.08,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="flex gap-5 rounded-2xl border border-slate-100 bg-white p-7 transition-all duration-300 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] hover:border-brand-primary/15"
+              className="flex gap-5 rounded-2xl border border-slate-100 bg-white p-7 transition-[box-shadow,border-color] duration-300 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)] hover:border-brand-primary/15"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-primary/10 text-brand-primary">
                 <item.icon size={24} weight="duotone" />

@@ -61,7 +61,7 @@ export default function TargetAudience() {
                 delay: i * 0.1,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="rounded-2xl border border-slate-100 bg-white p-8 transition-all duration-300 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)]"
+              className="rounded-2xl border border-slate-100 bg-white p-8 transition-[box-shadow] duration-300 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.06)]"
             >
               <div
                 className={`mb-5 flex h-14 w-14 items-center justify-center rounded-2xl ${profile.bg}`}

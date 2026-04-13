@@ -54,13 +54,13 @@ export default function Hero({ variant }: { variant: HeroVariant }) {
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <button
                 onClick={open}
-                className="rounded-xl bg-brand-primary px-8 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98] active:-translate-y-[1px]"
+                className="rounded-xl bg-brand-primary px-8 py-4 text-base font-semibold text-white transition-[background-color,transform] duration-200 hover:bg-brand-primary-hover active:scale-[0.98] active:-translate-y-[1px]"
               >
                 Descargar programa académico
               </button>
               <a
                 href="#formulario"
-                className="rounded-xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-brand-dark transition-all duration-200 hover:border-brand-primary hover:text-brand-primary active:scale-[0.98] text-center"
+                className="rounded-xl border-2 border-slate-200 bg-white px-8 py-4 text-base font-semibold text-brand-dark transition-[border-color,color,transform] duration-200 hover:border-brand-primary hover:text-brand-primary active:scale-[0.98] text-center"
               >
                 Conocer la carrera
               </a>

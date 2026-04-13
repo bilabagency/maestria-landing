@@ -120,7 +120,7 @@ export default function Investment() {
           </div>
           <button
             onClick={open}
-            className="shrink-0 rounded-xl bg-brand-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
+            className="shrink-0 rounded-xl bg-brand-primary px-6 py-3 text-sm font-semibold text-white transition-[background-color,transform] duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
           >
             Descargar programa académico
           </button>
