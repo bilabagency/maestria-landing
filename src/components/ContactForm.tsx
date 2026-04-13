@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import FormFields from "./FormFields";
 
 export default function ContactForm() {
@@ -11,13 +10,7 @@ export default function ContactForm() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          <motion.div
-            className="lg:col-span-2"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <div className="lg:col-span-2">
             <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
               Contacto
             </span>
@@ -66,19 +59,13 @@ export default function ContactForm() {
                 Tus datos están protegidos
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="lg:col-span-3"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
+          <div className="lg:col-span-3">
             <div className="rounded-2xl border border-slate-100 bg-white p-6 md:p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]">
               <FormFields submitLabel="Enviar consulta" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

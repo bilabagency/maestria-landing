@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useModal } from "./ModalProvider";
 
 export default function Solution() {
@@ -12,13 +11,7 @@ export default function Solution() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-          <motion.div
-            className="lg:col-span-3"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <div className="lg:col-span-3">
             <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
               La solución
             </span>
@@ -38,15 +31,9 @@ export default function Solution() {
                 organización durante la cursada.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="lg:col-span-2"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.15 }}
-          >
+          <div className="lg:col-span-2">
             <div className="rounded-2xl bg-white border border-slate-100 p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]">
               <dl className="space-y-5">
                 {[
@@ -74,7 +61,7 @@ export default function Solution() {
                 Descargar programa académico
               </button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

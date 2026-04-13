@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { CaretDown } from "@phosphor-icons/react";
 
 const axes = [
@@ -96,13 +96,7 @@ export default function StudyPlan() {
     <section className="py-20 md:py-28 bg-slate-50/50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          <motion.div
-            className="lg:col-span-2"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <div className="lg:col-span-2">
             <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
               Plan de estudios
             </span>
@@ -113,15 +107,9 @@ export default function StudyPlan() {
               16 seminarios organizados en ejes que combinan teoría, práctica y
               aplicación directa en tu contexto profesional.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="lg:col-span-3"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
+          <div className="lg:col-span-3">
             <div className="rounded-2xl bg-white border border-slate-100 p-6 md:p-8">
               {axes.map((item, i) => (
                 <AccordionItem
@@ -135,7 +123,7 @@ export default function StudyPlan() {
                 />
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

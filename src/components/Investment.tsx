@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useModal } from "./ModalProvider";
 import { Tag, Handshake } from "@phosphor-icons/react";
 
@@ -12,13 +11,7 @@ export default function Investment() {
       <div className="pointer-events-none absolute top-0 left-1/3 h-[400px] w-[400px] rounded-full bg-brand-mint/15 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-14"
-        >
+        <div className="mb-14">
           <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
             Inversión
           </span>
@@ -29,17 +22,11 @@ export default function Investment() {
             Opciones accesibles con beneficios exclusivos para socios de Mutual
             Jerárquicos y becas por referidos.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Matrícula */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="rounded-2xl border border-slate-100 bg-white p-8"
-          >
+          <div className="rounded-2xl border border-slate-100 bg-white p-8">
             <Tag
               size={24}
               weight="duotone"
@@ -52,16 +39,10 @@ export default function Investment() {
               $45.000
             </p>
             <p className="text-brand-muted text-sm mt-2">Pago único de inscripción</p>
-          </motion.div>
+          </div>
 
           {/* No socio */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.08 }}
-            className="rounded-2xl border border-slate-100 bg-white p-8"
-          >
+          <div className="rounded-2xl border border-slate-100 bg-white p-8">
             <p className="text-sm font-semibold text-brand-muted uppercase tracking-wider mb-2">
               Cuota no socio
             </p>
@@ -70,16 +51,10 @@ export default function Investment() {
               <span className="text-lg font-normal text-brand-muted">/mes</span>
             </p>
             <p className="text-brand-muted text-sm mt-2">24 cuotas mensuales</p>
-          </motion.div>
+          </div>
 
           {/* Socio */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.16 }}
-            className="rounded-2xl border-2 border-brand-primary/20 bg-brand-primary/5 p-8 relative"
-          >
+          <div className="rounded-2xl border-2 border-brand-primary/20 bg-brand-primary/5 p-8 relative">
             <span className="absolute top-4 right-4 rounded-full bg-brand-primary px-3 py-1 text-xs font-semibold text-white">
               Mejor precio
             </span>
@@ -96,16 +71,10 @@ export default function Investment() {
               <span className="text-lg font-normal text-brand-muted">/mes</span>
             </p>
             <p className="text-brand-muted text-sm mt-2">24 cuotas mensuales</p>
-          </motion.div>
+          </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-8 rounded-2xl border border-brand-mint-deep/20 bg-brand-mint/10 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4"
-        >
+        <div className="mt-8 rounded-2xl border border-brand-mint-deep/20 bg-brand-mint/10 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-mint-deep/20 text-emerald-700">
             <Handshake size={22} weight="duotone" />
           </div>
@@ -124,7 +93,7 @@ export default function Investment() {
           >
             Descargar programa académico
           </button>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

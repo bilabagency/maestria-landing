@@ -39,13 +39,7 @@ export default function FAQ() {
     <section className="py-20 md:py-28 bg-slate-50/50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          <motion.div
-            className="lg:col-span-2"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <div className="lg:col-span-2">
             <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
               Preguntas frecuentes
             </span>
@@ -56,15 +50,9 @@ export default function FAQ() {
               Si tu pregunta no está acá, completá el formulario y te respondemos
               a la brevedad.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="lg:col-span-3"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
+          <div className="lg:col-span-3">
             <div className="rounded-2xl bg-white border border-slate-100 p-6 md:p-8">
               {faqs.map((faq, i) => (
                 <div
@@ -109,7 +97,7 @@ export default function FAQ() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

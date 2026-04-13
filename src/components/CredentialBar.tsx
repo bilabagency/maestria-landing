@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import {
   GraduationCap,
   Certificate,
@@ -21,13 +20,7 @@ export default function CredentialBar() {
   return (
     <section className="border-y border-slate-100 bg-slate-50/50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-        <motion.div
-          className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4"
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
           {credentials.map((cred) => (
             <div
               key={cred.label}
@@ -37,7 +30,7 @@ export default function CredentialBar() {
               <span className="text-sm font-medium">{cred.label}</span>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
