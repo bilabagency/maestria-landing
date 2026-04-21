@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import LocalitySelect from "./LocalitySelect";
 
 function generateMathChallenge() {
   const a = Math.floor(Math.random() * 10) + 1;
@@ -79,7 +80,7 @@ export default function FormFields({
       else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
         errs.email = "Formato de email inválido";
       if (telefono.length < 6) errs.telefono = "Ingresá tu teléfono";
-      if (ciudad.length < 2) errs.ciudad = "Ingresá tu ciudad";
+      if (ciudad.length < 2) errs.ciudad = "Elegí tu localidad de la lista";
       if (!form.get("titulo")) errs.titulo = "Seleccioná una opción";
       if (!form.get("ocupacion")) errs.ocupacion = "Seleccioná una opción";
       if (!form.get("objetivo")) errs.objetivo = "Seleccioná una opción";
@@ -246,15 +247,13 @@ export default function FormFields({
         </div>
         <div>
           <label htmlFor="ciudad" className={labelBase}>
-            Ciudad de residencia
+            Localidad de residencia
           </label>
-          <input
-            type="text"
+          <LocalitySelect
             id="ciudad"
             name="ciudad"
-            required
-            className={inputBase}
-            placeholder="Ej: Santa Fe"
+            placeholder="Buscá tu localidad"
+            inputClassName={inputBase}
           />
           {errors.ciudad && <p className={errorBase}>{errors.ciudad}</p>}
         </div>
