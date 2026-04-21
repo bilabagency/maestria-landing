@@ -396,8 +396,8 @@ function Portada() {
               <div className="relative rounded-[2rem] overflow-hidden border border-white/60 shadow-[0_25px_50px_-15px_rgba(0,0,0,0.12)]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1000"
-                  alt="Equipo directivo de una institución educativa reunido"
+                  src="https://images.pexels.com/photos/5905554/pexels-photo-5905554.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                  alt="Joven profesional de la educación en contexto de estudio"
                   className="w-full aspect-[4/5] object-cover"
                   loading="lazy"
                 />
