@@ -38,10 +38,12 @@ export default function Hero({ variant }: { variant: HeroVariant }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-1.5 text-sm font-medium text-brand-primary">
-              <GraduationCap size={18} weight="bold" />
-              Inicio 15 de mayo
-            </div>
+            {variant.showHeroStartBadge !== false && (
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-1.5 text-sm font-medium text-brand-primary">
+                <GraduationCap size={18} weight="bold" />
+                Inicio 15 de mayo
+              </div>
+            )}
 
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter leading-none text-brand-dark mb-6 text-balance">
               {variant.title}

@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { GraduationCap } from "@phosphor-icons/react";
 import { useModal } from "./ModalProvider";
+import type { HeroVariant } from "@/lib/variants";
 
-export default function Navbar() {
+export default function Navbar({ variant }: { variant?: HeroVariant }) {
   const { open } = useModal();
   const [scrolled, setScrolled] = useState(false);
 
@@ -29,12 +31,20 @@ export default function Navbar() {
             alt="Fundación Jerárquicos Educa"
             className="h-10 w-auto"
           />
-          <button
-            onClick={open}
-            className="rounded-lg bg-brand-primary px-5 py-2.5 text-sm font-semibold text-white transition-[background-color,transform] duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
-          >
-            Descargar programa
-          </button>
+          <div className="flex items-center gap-3">
+            {variant?.navbarBadge && (
+              <span className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-brand-primary/10 px-3 py-1.5 text-xs font-medium text-brand-primary">
+                <GraduationCap size={14} weight="bold" />
+                {variant.navbarBadge}
+              </span>
+            )}
+            <button
+              onClick={open}
+              className="rounded-lg bg-brand-primary px-5 py-2.5 text-sm font-semibold text-white transition-[background-color,transform] duration-200 hover:bg-brand-primary-hover active:scale-[0.98]"
+            >
+              Descargar programa
+            </button>
+          </div>
         </div>
       </div>
     </nav>

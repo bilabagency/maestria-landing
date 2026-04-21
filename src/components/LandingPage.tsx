@@ -21,7 +21,7 @@ import Modal from "./Modal";
 export default function LandingPage({ variant }: { variant: HeroVariant }) {
   return (
     <>
-      <Navbar />
+      <Navbar variant={variant} />
       <main>
         <Hero variant={variant} />
         <CredentialBar />

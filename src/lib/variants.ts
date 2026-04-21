@@ -4,6 +4,8 @@ export interface HeroVariant {
   subtitle: string;
   image: string;
   imageAlt: string;
+  navbarBadge?: string;
+  showHeroStartBadge?: boolean;
 }
 
 export const variants: Record<string, HeroVariant> = {
@@ -23,6 +25,8 @@ export const variants: Record<string, HeroVariant> = {
     image:
       "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
     imageAlt: "Equipo directivo en reunión de trabajo",
+    navbarBadge: "Inicio 15 de mayo",
+    showHeroStartBadge: false,
   },
   c: {
     slug: "c",
