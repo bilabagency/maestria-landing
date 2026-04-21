@@ -23,8 +23,8 @@ export const variants: Record<string, HeroVariant> = {
     subtitle:
       "Maestría en Gestión y Asesoramiento Pedagógico · UNR · Santa Fe",
     image:
-      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-    imageAlt: "Equipo directivo en reunión de trabajo",
+      "https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=800",
+    imageAlt: "Docente en aula de clases",
     navbarBadge: "Inicio 15 de mayo",
     showHeroStartBadge: false,
   },
