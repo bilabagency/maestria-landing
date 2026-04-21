@@ -6,6 +6,7 @@ import {
   ArrowLeft,
   ArrowUpRight,
   Buildings,
+  CaretDown,
   Certificate,
   CheckCircle,
   Clock,
@@ -169,6 +170,7 @@ export default function GraciasContent() {
       <Header />
       <main>
         <Hero />
+        <Portada />
         <Curricular />
         <Perfil />
         <Plan />
@@ -228,18 +230,18 @@ function Hero() {
           >
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-brand-mint/30 border border-brand-mint-deep/40 px-4 py-1.5 text-sm font-medium text-emerald-700">
               <CheckCircle size={16} weight="fill" />
-              Consulta recibida — revisá tu email
+              Consulta recibida — gracias por contactarnos
             </div>
 
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter leading-[1.05] text-brand-dark mb-6 text-balance">
-              Listo. El programa ya va en camino a tu email.
+              Descargalo o miralo en esta página.
             </h1>
 
             <p className="text-lg text-brand-muted leading-relaxed max-w-[58ch] mb-10">
-              Si no lo encontrás en la bandeja de entrada, revisá el spam. Acá
-              abajo tenés el plan completo de la maestría: las 3 áreas de
-              formación, los 16 seminarios, el equipo docente y los requisitos
-              para inscribirte.
+              Tenés el PDF del programa a un clic. Y si preferís no bajarlo,
+              todo el plan está desplegado acá abajo: áreas de formación, los
+              16 seminarios, el equipo docente y los requisitos para
+              inscribirte.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -346,13 +348,135 @@ function Hero() {
           </motion.div>
         </div>
       </div>
+
+      <a
+        href="#programa"
+        aria-label="Ver el programa en esta página"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-brand-muted transition-colors duration-200 hover:text-brand-primary"
+      >
+        <span className="text-[11px] font-semibold uppercase tracking-[0.2em]">
+          Programa completo abajo
+        </span>
+        <CaretDown
+          size={18}
+          weight="bold"
+          className="animate-bounce"
+        />
+      </a>
+    </section>
+  );
+}
+
+function Portada() {
+  const stats = [
+    { value: "3", label: "Áreas de formación" },
+    { value: "16", label: "Seminarios y talleres" },
+    { value: "17", label: "Docentes" },
+    { value: "720", label: "Horas totales" },
+  ];
+  const toc = [
+    { href: "#curricular", label: "Características curriculares" },
+    { href: "#perfil", label: "Perfil del título" },
+    { href: "#plan", label: "Plan de estudios" },
+    { href: "#equipo", label: "Equipo docente" },
+    { href: "#requisitos", label: "Requisitos" },
+  ];
+
+  return (
+    <section id="programa" className="py-20 md:py-28 relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute top-1/3 right-0 h-[400px] w-[400px] rounded-full bg-brand-violet/10 blur-3xl" />
+      </div>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="lg:col-span-5 order-2 lg:order-1">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-brand-violet/25 via-brand-mint/15 to-brand-primary/10 blur-md" />
+              <div className="relative rounded-[2rem] overflow-hidden border border-white/60 shadow-[0_25px_50px_-15px_rgba(0,0,0,0.12)]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                  alt="Equipo directivo de una institución educativa reunido"
+                  className="w-full aspect-[4/5] object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 via-brand-dark/10 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 rounded-xl bg-white/90 backdrop-blur-md border border-white/60 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]">
+                  <p className="text-[11px] font-semibold text-brand-muted uppercase tracking-[0.15em] mb-1">
+                    Reconocimiento
+                  </p>
+                  <p className="text-sm font-semibold text-brand-dark leading-snug">
+                    CONEAU · Dictamen del 7 de mayo de 2018 — Sesión No.&nbsp;481
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="h-px w-8 bg-brand-primary" />
+              <span className="text-xs font-semibold text-brand-primary tracking-[0.2em] uppercase">
+                Programa académico · Edición 2026
+              </span>
+            </div>
+
+            <h2 className="text-3xl md:text-5xl xl:text-[3.5rem] font-bold tracking-tighter text-brand-dark leading-[1.05] mb-6 text-balance">
+              Maestría en Gestión y Asesoramiento Pedagógico de las
+              Organizaciones Educativas.
+            </h2>
+
+            <p className="text-lg text-brand-muted leading-relaxed max-w-[58ch] mb-10">
+              Una maestría profesional de la Universidad Nacional de Rosario,
+              dictada de forma presencial en Santa Fe Capital por Fundación
+              Jerárquicos Educa. Formación interdisciplinaria para gestionar,
+              asesorar y transformar instituciones educativas.
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-10 pt-8 border-t border-slate-100">
+              {stats.map((s) => (
+                <div key={s.label}>
+                  <p className="text-3xl md:text-4xl font-bold text-brand-dark tracking-tighter font-mono leading-none">
+                    {s.value}
+                  </p>
+                  <p className="text-sm text-brand-muted mt-2 leading-snug">
+                    {s.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <p className="text-[11px] font-semibold text-brand-muted uppercase tracking-[0.2em] mb-3">
+                En esta página
+              </p>
+              <nav className="flex flex-wrap gap-2">
+                {toc.map((a) => (
+                  <a
+                    key={a.href}
+                    href={a.href}
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-brand-muted transition-[border-color,color] duration-200 hover:border-brand-primary hover:text-brand-primary"
+                  >
+                    {a.label}
+                    <ArrowUpRight size={12} weight="bold" />
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
 
 function Curricular() {
   return (
-    <section className="py-20 md:py-28 border-t border-slate-100">
+    <section
+      id="curricular"
+      className="py-20 md:py-28 border-t border-slate-100 scroll-mt-20"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-4">
@@ -391,7 +515,10 @@ function Curricular() {
 
 function Perfil() {
   return (
-    <section className="py-20 md:py-28 bg-slate-50/60 relative overflow-hidden">
+    <section
+      id="perfil"
+      className="py-20 md:py-28 bg-slate-50/60 relative overflow-hidden scroll-mt-20"
+    >
       <div className="pointer-events-none absolute -bottom-32 -left-32 h-[400px] w-[400px] rounded-full bg-brand-violet/10 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
@@ -447,7 +574,7 @@ function Perfil() {
 
 function Plan() {
   return (
-    <section className="py-20 md:py-28">
+    <section id="plan" className="py-20 md:py-28 scroll-mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-16">
           <span className="text-sm font-semibold text-brand-primary tracking-wide uppercase mb-3 block">
@@ -531,7 +658,10 @@ function Plan() {
 function Equipo() {
   const [director, ...resto] = docentes;
   return (
-    <section className="py-20 md:py-28 bg-slate-50/60 relative overflow-hidden">
+    <section
+      id="equipo"
+      className="py-20 md:py-28 bg-slate-50/60 relative overflow-hidden scroll-mt-20"
+    >
       <div className="pointer-events-none absolute -top-32 -right-32 h-[400px] w-[400px] rounded-full bg-brand-mint/15 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
@@ -616,7 +746,7 @@ function DirectorCard({
 
 function Requisitos() {
   return (
-    <section className="py-20 md:py-28">
+    <section id="requisitos" className="py-20 md:py-28 scroll-mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-4">
