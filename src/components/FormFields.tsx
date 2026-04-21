@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 function generateMathChallenge() {
   const a = Math.floor(Math.random() * 10) + 1;
@@ -45,6 +45,7 @@ export default function FormFields({
   submitLabel = "Enviar consulta",
 }: FormFieldsProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const variant = variantFromPath(pathname);
 
   const [challenge, setChallenge] = useState(generateMathChallenge);
@@ -145,6 +146,7 @@ export default function FormFields({
           window.dataLayer.push({ event: "lead_submitted", variant });
         }
         onSuccess?.();
+        router.push("/gracias");
       } catch (err) {
         const code = err instanceof Error ? err.message : "unknown";
         const friendly =
