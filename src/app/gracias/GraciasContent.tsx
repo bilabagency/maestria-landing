@@ -20,8 +20,8 @@ import {
 } from "@phosphor-icons/react";
 
 const PDF_HREF = "/programa-maestria-2026.pdf";
-const WHATSAPP_HREF = "https://wa.me/543425551234";
-const PHONE_HREF = "https://wa.me/5493424050099";
+const WHATSAPP_HREF = "https://wa.me/5493424000099";
+const PHONE_HREF = WHATSAPP_HREF;
 
 const curricular: Array<{ label: string; value: string }> = [
   { label: "Nivel", value: "Posgrado" },
